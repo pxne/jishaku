@@ -52,7 +52,7 @@ class ManagementFeature(Feature):
 
         for extension in itertools.chain(*extensions):
             method, icon = (
-                (self.bot.reload_extension, "\N{CLOCKWISE RIGHTWARDS AND LEFTWARDS OPEN CIRCLE ARROWS}")
+                (self.bot.reload_extension, "ok")
                 if extension in self.bot.extensions else
                 (self.bot.load_extension, "\N{INBOX TRAY}")
             )
